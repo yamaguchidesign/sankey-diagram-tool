@@ -468,6 +468,7 @@ class SankeyDiagramTool {
             if (containerHeight === 0) containerHeight = 880;
 
 
+            
             const margin = { top: 10, right: 60, bottom: 10, left: 60 };
             const width = containerWidth - margin.left - margin.right;
             const height = containerHeight - margin.top - margin.bottom;
