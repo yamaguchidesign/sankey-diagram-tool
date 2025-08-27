@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>サンキーダイアグラム作成ツール</title>
+    <title>収入と支出 サンキーダイアグラム</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/d3-sankey@0.12.3/dist/d3-sankey.min.js"></script>
@@ -13,23 +13,35 @@
 <body>
     <div class="container">
         <header>
-            <h1>🌊 サンキーダイアグラム作成ツール</h1>
-            <p>データの流れを美しく可視化しましょう</p>
+            <h1>収入と支出 サンキーダイアグラム</h1>
         </header>
 
         <main>
             <div class="controls-panel">
                 <div class="input-section">
                     <h3>📊 データ入力</h3>
-                    <textarea id="text-data" placeholder="Web広告 [1000] サイト訪問
-検索エンジン [800] サイト訪問
-SNS [600] サイト訪問
-サイト訪問 [1200] 商品閲覧
-サイト訪問 [1200] 離脱
-商品閲覧 [400] カート追加
-商品閲覧 [800] 離脱
-カート追加 [300] 購入完了
-カート追加 [100] 離脱"></textarea>
+                    <textarea id="text-data" placeholder="給与 [300000] メイン口座
+副業収入 [50000] 副業用口座
+副業用口座 [10000] 副業経費
+副業用口座 [40000] メイン口座
+メイン口座 [100000] 生活費
+メイン口座 [80000] 貯金
+メイン口座 [50000] 投資
+メイン口座 [30000] 趣味・娯楽
+メイン口座 [40000] その他
+生活費 [40000] 食費
+生活費 [30000] 光熱費
+生活費 [20000] 交通費
+生活費 [10000] 通信費
+貯金 [50000] 緊急用
+貯金 [30000] 旅行用
+投資 [30000] つみたてNISA
+投資 [20000] 個別株
+趣味・娯楽 [15000] 映画・音楽
+趣味・娯楽 [10000] スポーツ
+趣味・娯楽 [5000] 読書
+">
+</textarea>
                     <small>形式: ソース名 [値] ターゲット名（1行1つのフロー）</small>
 
                     <div class="unit-input">
@@ -38,10 +50,7 @@ SNS [600] サイト訪問
                     </div>
                 </div>
 
-                <div class="export-section">
-                    <h3>💾 エクスポート</h3>
-                    <button id="export-btn" class="tertiary-btn">SVGファイルとして保存</button>
-                </div>
+
             </div>
 
             <div class="chart-panel">
