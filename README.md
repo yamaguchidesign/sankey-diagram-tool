@@ -12,7 +12,7 @@
 
 ## 🚀 デモ
 
-[デモページ](https://your-username.github.io/repo-name/) で実際に試すことができます。
+[デモページ](https://yamaguchidesign.github.io/sankey-diagram-tool/) で実際に試すことができます。
 
 ## 📊 使用方法
 
@@ -67,8 +67,8 @@ const blueGreenPalette = [
 
 1. リポジトリをクローン
 ```bash
-git clone https://github.com/your-username/repo-name.git
-cd repo-name
+git clone https://github.com/yamaguchidesign/sankey-diagram-tool.git
+cd sankey-diagram-tool
 ```
 
 2. ローカルサーバーで起動（例：VS Code Live Server）
