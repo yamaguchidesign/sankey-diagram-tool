@@ -140,6 +140,23 @@ class SankeyDiagramTool {
         }, 500);
     }
 
+    // サンプルデータを読み込み
+    loadSampleData() {
+        // 単位フィールドから初期値を読み込み
+        const unitField = document.getElementById('unit-field');
+        if (unitField) {
+            this.unit = unitField.value.trim() || '';
+        }
+
+        // HTMLのplaceholder属性からサンプルデータを読み込み
+        const textArea = document.getElementById('text-data');
+        const sampleText = textArea.placeholder || '';
+
+        // テキストエリアにサンプルデータを設定
+        textArea.value = sampleText;
+        this.parseTextData();
+    }
+
     assignNodeColors() {
         // 全ノードを抽出
         const nodeSet = new Set();
